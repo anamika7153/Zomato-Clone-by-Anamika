@@ -3,10 +3,42 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'sans-serif';
     border: none;
     text-decoration: none;
 }
 a {
     color:unset;
+}
+header {
+    background-image: url("../images/hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-item {
+    color: #fff;
+    margin: 0 10px;
+}
+nav div.container {
+    display: flex;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+nav .app {
+    font-size:  0.9rem;
+    font-weight: 800;
 }
