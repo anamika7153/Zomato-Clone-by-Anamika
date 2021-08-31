@@ -252,9 +252,80 @@ section.explore .container ul {
     flex-wrap: wrap;
 }
 
-section.explore .container ul li{
+section.explore .container ul li,
+footer div.container div.links ul li{
     padding: 6px 16px;
     list-style: none;
     padding-left: 0;
     color: #828282;
+}
+
+/*********************************/
+/*        FOOTER                */
+/*********************************/
+footer {
+    background-color: #F8F8F8;
+    height: 50vh;
+
+}
+footer div.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+footer div.footer-head {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+footer div.container img {
+    width: 100%;
+    height: 30px;
+}
+footer div.container div.right-col {
+    display: flex;
+    text-align: center;
+    width: 220px;
+    justify-content: space-between;
+}
+footer div.container div.right-col .btn-country,
+footer div.container div.right-col .btn-language {
+    width: 100px;
+    border: 1px solid #363636;
+    border-radius: 6px;
+    padding: 10px;
+}
+footer div.container .links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-right: 80px;
+
+}
+footer div.container .links h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.08rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+footer div.container .links .social-links {
+    display: flex;
+    flex-direction: column;
+}
+footer div.container .links .social-links img {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 2.5rem;
 }
