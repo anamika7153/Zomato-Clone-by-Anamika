@@ -6,6 +6,7 @@
     font-family: 'Roboto', 'sans-serif';
     border: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 html,
 body {
@@ -180,13 +181,28 @@ section.get-app .app-info .app-link img {
     margin-right: 20px;
 }
 section.get-app .app-info div.input {
-    display: inline-block;
+    display: flex;
+    justify-content: start;
+    min-height: 3rem;
 }
+section.get-app .app-info div.input input {
+    width: 70%;
+    color: #cfcfcf;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    padding: 8px;
+}
+
 section.get-app .app-info div.input div.btn-app {
     padding: 10px;
+    width: 30%;
     background-color:#ED5A6B ;
     border-radius: 8px;
-    max-width: 130px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 8px;
 }
 
 section .app-info h2 {
@@ -209,3 +225,36 @@ section.get-app div.app-info p.text{
 
 }
 
+/*********************************/
+/*        EXPLORE                */
+/*********************************/
+section.explore {
+    min-height: 50vh;
+}
+section.explore .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 10px;
+}
+section.explore .container h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+section.explore .container h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 18px 0;
+}
+section.explore .container ul {
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.explore .container ul li{
+    padding: 6px 16px;
+    list-style: none;
+    padding-left: 0;
+    color: #828282;
+}
