@@ -126,7 +126,13 @@ header div.search-box div.select select{
 }
 .cities .container {
     text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
 }
+.cities .container span {
+    font-weight: 400;
+}
+
 .cities h1 {
     font-size: 2.8rem;
     font-weight: 300;
@@ -135,7 +141,9 @@ header div.search-box div.select select{
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
     max-width: 25%;
     margin: 30px 80px;
     padding: 25px;
@@ -190,11 +198,12 @@ section.get-app .app-info div.input input {
     color: #cfcfcf;
     border-radius: 8px;
     border: 1px solid #cfcfcf;
-    padding: 8px;
+    padding: 10px;
+    font-size: 1.1rem;
 }
 
 section.get-app .app-info div.input div.btn-app {
-    padding: 10px;
+    padding: 14px 8px;
     width: 30%;
     background-color:#ED5A6B ;
     border-radius: 8px;
@@ -217,7 +226,7 @@ section .app-info label {
 }
 section .app-info h2,
 section .app-info p{margin-bottom : 24px}
-section.get-app div.app-info p.text{
+section.get-app div.app-info p.btn-share{
     font-size: 1.2rem;
     font-weight: 300;
     margin-top: 20px;
