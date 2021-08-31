@@ -7,9 +7,24 @@
     border: none;
     text-decoration: none;
 }
+html,
+body {
+    color: #363636;
+}
 a {
     color:unset;
 }
+*:focus {      /*focus: whenever an item is clicked*/
+    outline: none;       /*on clicking a border is appeared it removes tht*/
+    border: none;
+}
+section {
+    margin: 20px 0;
+
+}
+/*********************************/
+/*        HEADER                */
+/*********************************/
 header {
     background-image: url("../images/hero.png");
     background-position: center;
@@ -42,3 +57,155 @@ nav .app {
     font-size:  0.9rem;
     font-weight: 800;
 }
+
+/*********************************/
+/*        HEADER CONTENT        */
+/*********************************/
+header div.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+header img.logo {width: 300px;}
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+header div.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 10px;
+} 
+div.search-box i {
+    margin: 10px;
+}
+header div.search-box div.select i{
+    color: #F57082;
+}
+header div.search-box div.input i{
+    color: #828282b7;
+}
+header div.search-box div.separator {
+
+    background-color: #8282829b;
+    height: 50%;
+    width: 2px;
+}
+header div.search-box div.input {
+    flex-grow: 80;
+}
+header div.search-box div.input input {
+    width: 100%;
+}
+div.search-box div {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0px 10px;
+}
+header div.search-box div.input input,
+header div.search-box div.select select{
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+/*********************************/
+/*        CITIES                 */
+/*********************************/
+.cities {
+    min-height: 30vh;
+}
+.cities .container {
+    text-align: center;
+}
+.cities h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+.cities .btn-cities {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 25%;
+    margin: 30px 80px;
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+/*********************************/
+/*        GET APP                 */
+/*********************************/
+section.get-app{
+    background-color: #FFFBF7;
+
+}
+section.get-app .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section.get-app .container img {
+    max-width: 300px;
+}
+section.get-app .container .app-info {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.get-app div.input-radio {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+}
+section.get-app div.input-radio div{margin-right: 2.8rem;}
+section.get-app .app-info .app-link {
+    display: inline-block;
+}
+section.get-app .app-info .app-link img {
+    max-width: 180px;
+    margin-right: 20px;
+}
+section.get-app .app-info div.input {
+    display: inline-block;
+}
+section.get-app .app-info div.input div.btn-app {
+    padding: 10px;
+    background-color:#ED5A6B ;
+    border-radius: 8px;
+    max-width: 130px;
+}
+
+section .app-info h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+section .app-info p,
+section .app-info label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+section .app-info h2,
+section .app-info p{margin-bottom : 24px}
+section.get-app div.app-info p.text{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #9c9c9c;
+
+}
+
