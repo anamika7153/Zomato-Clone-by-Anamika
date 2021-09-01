@@ -255,16 +255,15 @@ section.explore .container h3 {
     font-weight: 400;
     padding: 18px 0;
 }
-section.explore .container ul {
+section.explore .container div ul {
     display: flex ;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-section.explore .container ul li,
-footer div.container div.links ul li{
-    padding: 6px 16px;
-    list-style: none;
+section.explore .container ul li
+{
+    padding: 6px 30px;
     padding-left: 0;
     color: #828282;
 }
@@ -291,7 +290,11 @@ footer div.footer-head {
     justify-content: space-between;
 
 }
-
+footer div.container div.links ul li {
+    list-style: none;
+    padding: 4px 0;
+    font-size: 1.2rem;
+}
 
 
 
@@ -323,7 +326,7 @@ footer div.container .links {
 footer div.container .links h4 {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.08rem;
     color: #000;
     margin-bottom: 10px;
@@ -337,4 +340,6 @@ footer div.container .links .social-links img {
     margin-bottom: 10px;
     width: 90%;
     height: 2.5rem;
+    color: #828282;
+
 }
